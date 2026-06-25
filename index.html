@@ -26,6 +26,18 @@ body{
     max-width:1200px;
     margin:auto;
 }
+    
+    .intro-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:25px;
+    margin-bottom:20px;
+}
+
+.intro-info{
+    flex:1;
+}
 
 header{
     background:#0f172a;
@@ -85,16 +97,16 @@ nav ul li a:hover{
     background-repeat:no-repeat;
 }
 
-.hero-content{
-    position:absolute;
-    top:8%;
-    right:15%;
+.hero-text{
+    background:#ffffff;
+    color:#1f2937;
 
-    display:flex;
-    align-items:flex-start;   /* Align image with top of text */
-    gap:25px;
+    padding:32px;
+    border-radius:16px;
 
-    max-width:850px;
+    box-shadow:
+        0 8px 24px rgba(0,0,0,0.12),
+        0 2px 8px rgba(0,0,0,0.08);
 }
 
 .hero-text{
@@ -139,17 +151,16 @@ nav ul li a:hover{
 }
 
 .profile-img{
-    width:160px;
-    height:200px;
+    width:130px;
+    height:130px;
 
+    border-radius:50%;
     object-fit:cover;
 
-    border-radius:16px;
     border:none;
+    box-shadow:none;
 
-    box-shadow:
-        0 4px 6px rgba(0,0,0,0.10),
-        0 10px 20px rgba(0,0,0,0.08);
+    flex-shrink:0;
 }
 
 section{
@@ -276,25 +287,34 @@ nav ul{
 <div class="hero-content">
 
 <div class="hero-text">
-<h1>Dr. Ariful Mashud</h1>
-<h2>Assistant Professor | BITS Pilani</h2>
 
-<p>
-Assistant Professor in Electrical and Electronics Engineering (EEE)
-at BITS Pilani Hyderabad Campus. PhD in Control Systems with
-3+ years of Automotive Research & Development experience.
+    <div class="intro-header">
 
-Research interests include Real-Time Controller Design,
-Autonomous Vehicle Systems, Applied Machine Learning,
-Deep Learning and Robotics.
-</p>
+        <div class="intro-info">
+            <h1>Dr. Ariful Mashud</h1>
+            <h2>Assistant Professor | BITS Pilani</h2>
+        </div>
 
-<a href="#" class="btn">Download CV</a>
-<a href="#contact" class="btn">Contact Me</a>
+        <img src="Ariful.jpg"
+             alt="Profile Photo"
+             class="profile-img">
+
+    </div>
+
+    <p>
+    Assistant Professor in Electrical and Electronics Engineering (EEE)
+    at BITS Pilani Hyderabad Campus. PhD in Control Systems with
+    3+ years of Automotive Research & Development experience.
+
+    Research interests include Real-Time Controller Design,
+    Autonomous Vehicle Systems, Applied Machine Learning,
+    Deep Learning and Robotics.
+    </p>
+
+    <a href="#" class="btn">Download CV</a>
+    <a href="#contact" class="btn">Contact Me</a>
 
 </div>
-
-<img src="Ariful.jpg" alt="Profile Photo" class="profile-img">
 
 </div>
 </div>
