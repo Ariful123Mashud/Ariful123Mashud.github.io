@@ -50,6 +50,7 @@ nav{
 nav ul{
     display:flex;
     list-style:none;
+    flex-wrap:wrap;
 }
 
 nav ul li{
@@ -194,6 +195,41 @@ section{
     color:#0f172a;
 }
 
+.project-card .tag{
+    display:inline-block;
+    font-size:0.75rem;
+    font-weight:600;
+    color:#0ea5e9;
+    background:#e0f2fe;
+    padding:4px 10px;
+    border-radius:20px;
+    margin-bottom:12px;
+}
+
+.course-card{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    border-left:4px solid #38bdf8;
+}
+
+.course-card h3{
+    color:#0f172a;
+    margin-bottom:6px;
+}
+
+.course-code{
+    display:inline-block;
+    font-size:0.8rem;
+    font-weight:600;
+    color:#0f172a;
+    background:#f1f5f9;
+    padding:3px 10px;
+    border-radius:6px;
+    margin-bottom:10px;
+}
+
 .timeline{
     border-left:4px solid #38bdf8;
     padding-left:25px;
@@ -262,7 +298,9 @@ nav ul{
 <ul>
 <li><a href="#about">About</a></li>
 <li><a href="#research">Research</a></li>
+<li><a href="#teaching">Teaching</a></li>
 <li><a href="#projects">Projects</a></li>
+<li><a href="#current-projects">Current Projects</a></li>
 <li><a href="#publications">Publications</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
@@ -363,6 +401,40 @@ Dr. Mashud's research focuses on integrating advanced control theory, machine le
 </div>
 </section>
 
+<section id="teaching">
+<div class="container">
+
+<div class="section-title">
+<h2>Current Subjects Teaching</h2>
+</div>
+
+<div class="skills-grid">
+
+<div class="course-card">
+<span class="course-code">BTEEZC419</span>
+<h3>Introduction to Sensor Technologies</h3>
+<p>
+Postgraduate course covering sensor fundamentals, static and dynamic sensor characteristics,
+transfer function time constants, Hall effect sensors, signal conditioning, noise and filtering,
+and sensor fusion. Delivered online through the BITS Pilani WILP format.
+</p>
+</div>
+
+<div class="course-card">
+<span class="course-code">ESZG545</span>
+<h3>Control and Instrumentation</h3>
+<p>
+Postgraduate course covering power electronics regulation, converter modeling, voltage-mode
+and current-mode control, and instrumentation for control systems. Delivered online through
+the BITS Pilani WILP format.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
 <section id="projects">
 <div class="container">
 
@@ -390,6 +462,74 @@ TensorFlow Lite for Microcontrollers (TFLM) for object detection
 <h3>Control System Optimization</h3>
 <p>
 Developed advanced robust control algorithms for dynamic systems.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section id="current-projects">
+<div class="container">
+
+<div class="section-title">
+<h2>Current Projects</h2>
+</div>
+
+<div class="project-grid">
+
+<div class="project-card">
+<span class="tag">AV Roadmap</span>
+<h3>Neural MPC for Autonomous Vehicles</h3>
+<p>
+Ongoing research into Neural Model Predictive Control for safe and efficient
+trajectory tracking and motion planning in autonomous driving.
+</p>
+</div>
+
+<div class="project-card">
+<span class="tag">AV Roadmap</span>
+<h3>CBF-Safe Reinforcement Learning</h3>
+<p>
+Development of Control Barrier Function-based Safe Reinforcement Learning
+methods to guarantee safety constraints in learned driving policies.
+</p>
+</div>
+
+<div class="project-card">
+<span class="tag">AV Roadmap</span>
+<h3>Autoware & ROS 2 Research Stack</h3>
+<p>
+Setting up an Autoware (ROS 2 Jazzy) based autonomous driving stack on Ubuntu 24.04
+as a research and experimentation platform.
+</p>
+</div>
+
+<div class="project-card">
+<span class="tag">AV Roadmap</span>
+<h3>CARLA Simulation & Sensor Failure Studies</h3>
+<p>
+Building CARLA-based simulation demonstrations, including sensor failure scenarios,
+to study perception robustness in autonomous driving systems.
+</p>
+</div>
+
+<div class="project-card">
+<span class="tag">AV Roadmap</span>
+<h3>Sim-to-Real AV Testbed</h3>
+<p>
+Planning a small-scale, F1TENTH-style autonomous vehicle testbed for validating
+Neural MPC and CBF-Safe RL algorithms in a sim-to-real setting.
+</p>
+</div>
+
+<div class="project-card">
+<span class="tag">AV Roadmap</span>
+<h3>Motion & Trajectory Prediction</h3>
+<p>
+Exploring trajectory prediction methods (Social-LSTM, Social-GAN, GNNs, Transformers)
+as part of a safe navigation stack for autonomous vehicles.
 </p>
 </div>
 
@@ -522,3 +662,5 @@ Ariful123Mashud
 <p>© 2026 Dr. Ariful Mashud | Assistant Professor & Researcher | BITS Pilani</p>
 </footer>
 
+</body>
+</html>
